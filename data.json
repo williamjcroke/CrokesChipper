@@ -1,0 +1,223 @@
+{
+
+	"category": [
+		{
+			"_id": "chips"
+		},
+		{
+			"_id": "sausages"
+		},
+		{
+			"_id": "burgers"
+		},
+		{
+			"_id": "chicken"
+		},
+		{
+			"_id": "fish"
+		}
+	],
+
+	"items": [
+		{
+			"_id": 1,
+			"category_id": "chips",
+			"name": "small",
+			"qty": 1,
+			"price": 2.50
+		},
+		{
+			"_id": 2,
+			"category_id": "chips",
+			"name": "large",
+			"qty": 1,
+			"price": 3
+		},
+		{
+			"_id": 3,
+			"category_id": "chips",
+			"name": "family box",
+			"qty": 1,
+			"price": 7
+		},
+		{
+			"_id": 4,
+			"category_id": "sausages",
+			"name": "plain",
+			"qty": 1,
+			"price": 0.50
+		},
+		{
+			"_id": 5,
+			"category_id": "sausages",
+			"name": "large",
+			"qty": 1,
+			"price": 1
+		},
+		{
+			"_id": 6,
+			"category_id": "sausages",
+			"name": "battered",
+			"qty": 1,
+			"price": 1.50
+		},
+		{
+			"_id": 7,
+			"category_id": "burgers",
+			"name": "plain",
+			"qty": 1,
+			"price": 2.50
+		},
+		{
+			"_id": 8,
+			"category_id": "burgers",
+			"name": "cheese",
+			"qty": 1,
+			"price": 3
+		},
+		{
+			"_id": 9,
+			"category_id": "burgers",
+			"name": "double cheese",
+			"qty": 1,
+			"price": 3.50
+		},
+		{
+			"_id": 10,
+			"category_id": "burgers",
+			"name": "1/4 pounder",
+			"qty": 1,
+			"price": 4
+		},
+		{
+			"_id": 11,
+			"category_id": "burgers",
+			"name": "1/4 pounder with cheese",
+			"qty": 1,
+			"price": 4.50
+		},
+		{
+			"_id": 12,
+			"category_id": "chicken",
+			"name": "pieces",
+			"qty": 1,
+			"price": 2
+		},
+		{
+			"_id": 13,
+			"category_id": "chicken",
+			"name": "six nuggets",
+			"qty": 1,
+			"price": 3
+		},
+		{
+			"_id": 14,
+			"category_id": "chicken",
+			"name": "eight nuggets",
+			"qty": 1,
+			"price": 3.50
+		},
+		{
+			"_id": 15,
+			"category_id": "chicken",
+			"name": "ten nuggets",
+			"qty": 1,
+			"price": 4
+		},
+		{
+			"_id": 16,
+			"category_id": "chicken",
+			"name": "fillet burger",
+			"qty": 1,
+			"price": 4
+		},
+		{
+			"_id": 17,
+			"category_id": "chicken",
+			"name": "snack boxes - 2 pieces",
+			"qty": 1,
+			"price": 6
+		},
+		{
+			"_id": 18,
+			"category_id": "fish",
+			"name": "cod",
+			"qty": 1,
+			"price": 3
+		},
+		{
+			"_id": 19,
+			"category_id": "fish",
+			"name": "haddock",
+			"qty": 1,
+			"price": 3.50
+		},
+		{
+			"_id": 20,
+			"category_id": "fish",
+			"name": "plaice",
+			"qty": 1,
+			"price": 4
+		},
+		{
+			"_id": 21,
+			"category_id": "fish",
+			"name": "box - plaice and chips",
+			"qty": 1,
+			"price": 7
+		}
+	],
+
+	"discounts": [
+		{
+			"_id": "Monday",
+			"price": 5,
+			"index": 1,
+			"items": [{"items_id": 11, "itm_qty": 1 },{ "items_id": 1, "itm_qty": 1}],
+			"title": "1/4 Pounder with Cheese and Chips"
+		},
+		{
+			"_id": "Tuesday",
+			"price": 5,
+			"index": 2,
+			"items": [{"items_id": 16, "itm_qty": 1 },{ "items_id": 1, "itm_qty": 1}],
+			"title": "Chicken Fillet Burger and Chips"
+		},
+		{
+			"_id": "Wednesday",
+			"price": 5,
+			"index": 3,
+			"items": [{"items_id": 17, "itm_qty": 1 },{ "items_id": 1, "itm_qty": 1}],
+			"title": "Snack Box - 2 Pieces of Chicken with Chips"
+		},
+		{
+			"_id": "Thursday",
+			"price": 5,
+			"index": 4,
+			"items": [{"items_id": 9, "itm_qty": 1},{ "items_id": 1, "itm_qty": 1}],
+			"title": "Double Cheese Burger and Chips"
+		},
+		{
+			"_id": "Friday",
+			"price": 6,
+			"index": 5,
+			"items": [{"items_id": 21, "itm_qty": 1}],
+			"title": "Fish Box - Plaice and Chips"
+		},
+		{
+			"_id": "Saturday",
+			"price": 5,
+			"index": 6,
+			"items": [{"items_id": 13, "itm_qty": 1},{ "items_id": 4, "itm_qty": 1},{ "items_id": 1, "itm_qty": 2}],
+			"title": "6 Nuggets, 2 Plain Sausages and Chips"
+		},
+		{
+			"_id": "Every Day Meal",
+			"price": 10,
+			"index": 7,
+			"items": [{"items_id": 1, "itm_qty": 2},{ "items_id": 7, "itm_qty": 2},{ "items_id": 4, "itm_qty": 2},{ "items_id": 13, "itm_qty": 1 }],
+			"title": "2 Chips, 2 Plain Burgers, 2 Plain Sausages, Six Nuggets"
+		}
+
+	]
+}

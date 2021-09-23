@@ -1,0 +1,25 @@
+<header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>{{title}}</h1>
+            <h2>When all is finished, add employee login and restrict access to order menu!</h2>
+            <br>
+      <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+      <form ng-submit="formSubmit()" class="form">
+          <div class="form-group">
+            <input type="text" class="form-control" ng-model="username" placeholder="Employee Number" required=""/>
+          </div> 
+
+          <div class="form-group">
+            <input type="password" class="form-control" ng-model="password" placeholder="PIN" required=""/>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-dark btn-lg">Login</button>
+            <span class="text-danger">{{ error }}</span>
+          </div>
+      </form>
+      </div>
+      </div>
+        </div>
+</header>

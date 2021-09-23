@@ -1,0 +1,91 @@
+<header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>{{title}}</h1>
+            <br/>
+        </div>
+</header>
+<div class="row">
+<div class="col-xs-10 col-xs-offset-1">
+
+
+<div class="row">
+
+<!-- Menu -->
+
+<div class="col-xs-4">
+<div class="bord">
+<h1 class="text-center">Menu</h1>
+<hr/>
+
+<!--
+<h3>Categories -</h3>
+<div id="showItemsByCat">
+ <div id="{{c._id}}" class="row" ng-repeat="c in categories"
+ ng-include src="getTemplateCategoryItems(c)"
+ >
+</div>
+</div>
+
+<h3>Items -</h3> -->
+<div id="showItems">
+ <div id="{{i._id}}" class="row" ng-repeat="i in items| orderBy:['_id'] track by i._id"
+ ng-include src="getTemplateItems(i)"
+ >
+ </div>
+ </div>
+
+
+</div>
+</div>
+
+<!-- Specials -->
+
+<div class="col-xs-4">
+<div class="bord">
+<h1 class="text-center">Specials</h1>
+<hr/>
+
+<div id="showDiscounts">
+ <div id="{{d._id}}" class="row" ng-repeat="d in discounts | orderBy:['index'] track by d.index"
+ ng-include src="getTemplateDiscounts(d)"
+ >
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Orders -->
+
+<div class="col-xs-4">
+<div class="bord">
+<h1 class="text-center">Order</h1>
+<hr/>
+
+<div id="showOrder">
+ <div id="{{o._id}}" class="row" ng-repeat="o in order | orderBy:['_id'] track by o._id"
+ ng-include src="getTemplateOrder(o)">
+
+</div>
+</div>
+<h3>Total cost = &euro;{{totalcost.toFixed(2)}}</h3>
+<hr/>
+<h3>Available Discounts -</h3>
+
+<div id="showAvailDis">
+ <div id="{{u._id}}" class="row" ng-repeat="u in specialavail | orderBy:['index'] track by u.index"
+ ng-include src="getTemplateDisAvail(u)">
+
+</div>
+</div>
+
+<button id="checkoutBtn" class="text-right btn btn-success" disabled ng-click="checkoutOrder()">Checkout</button>
+
+</div>
+</div>
+
+
+</div>
+
+</div>
+</div>
